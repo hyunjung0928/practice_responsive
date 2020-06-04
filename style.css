@@ -1,111 +1,168 @@
 *{
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-family: 'Arvo', serif;
 }
-.banner{
-    position: relative;
+.first{
     width: 100%;
     height: 100vh;
-    background: #3475ca;
+    background-color: aliceblue;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.banner img{
+
+.first .nav_toggleBtn{
+    color: black;
+    z-index: 2;
+}
+.first img{
     position: absolute;
-    top: 0;
-    left: 0;
+    top:0; bottom: 0;
+    left: 0; right;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
-    opacity: 0.25;
+    opacity: 0.5;
+    z-index: 1;
 }
-.banner .content{
-    position: relative;
-    max-width: 750px;
+.first header{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:5px;
+    right: 8px;
+    left:8px;
+    bottom: 5px;
+    font-size: 25px;
+}
+.first .introduction{
     text-align: center;
+    padding-top: 50px;
 }
-.banner content h2{
-    color: #fff;
+.second{
+    width: 100%;
+    height: 100vh;
+}
+.second .left{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    background-color: cadetblue;
+    
+}
+.second .left h2{
+    padding: 30px 30px 0px 30px;
+}
+.second .left p{
+    padding: 0px 30px;
+}
+.second .right{
+    float: right;
+    width: 50%;
+    height: 100vh;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.second img{
+    width: auto; height: auto;
+    max-width: 300px;
+    max-height: 300px;   
+}
+
+.third{
+    width: 100%;
+    height: 100vh;
+  background-color: rosybrown;
+}
+.third .descriptions{
+    padding: 20px;
+    text-align: center;
+    padding-top: 130px;
+}
+.third .contents{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.third .contents .design {
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    border-style: solid;
+    border-width: 5px;
+}
+.third .contents .design svg{
     font-size: 60px;
 }
-.banner content p{
-    color: #fff;
-    font-size: 18px;
-}
-.banner header{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
+.third .contents .development{
+    background-color: white;
+    width: 250px;
+    height: 300px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    z-index: 10000;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    border-style: solid;
+    border-width: 5px;
 }
-.banner header .logo{
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
+.third .contents .development svg{
+    font-size: 60px;
 }
-.banner header .toggle{
-    position: relative;
-    width: 36px;
-    height: 28px;
-    background: url(toggle.png);
-    background-size: cover;
-    cursor: pointer;
-}
-.about{
-    position: relative;
-    width: 100%;
+.third .contents .branding{
+    background-color: white;
+    width: 250px;
+    height: 300px;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    border-style: solid;
+    border-width: 5px;
 }
-.about .contentBx{
-    background: #162c3b;
-    padding: 100px;
-    width: 50%;
+.third .contents .branding svg{
+    font-size: 60px;
 }
-.heading{
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+.fourth{
+    width: 100%;
+    height: 100vh;
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
-.text{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 1px;
+.fourth .script1{
+    padding: 30px;
+    width: 70%;
+    height: 60%;
+    border: solid;
+    
 }
-.about .imgBx{
-    background: url(window.jpg);
-}
-.services{
-    background-position: #12222d;
-    padding: 100px;
+.fourth .images{
+    padding: 30px;
+    width: 40%;
+    height: 60%;
+    border: solid; font-size: 80px;
     text-align: center;
 }
-.services .container{
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 60px;
-}
-.services .container .serviceBx{
+.fourth .images svg{
     position: relative;
-    background: #fff;
-    width: 350px;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
+    top:150px;
+}
+.fourth .script2{
+    position: relative;
+    top: 600px;
+    width: 100%;
+    border: solid;
 }
