@@ -15,16 +15,14 @@
 
 .first .nav_toggleBtn{
     color: black;
-    z-index: 2;
+    z-index: 3;
 }
 .first img{
     position: absolute;
-    top:0; bottom: 0;
-    left: 0; right;
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 0.4;
     z-index: 1;
 }
 .first header{
@@ -40,6 +38,8 @@
 .first .introduction{
     text-align: center;
     padding-top: 50px;
+    color: black;
+    z-index: 2;
 }
 .second{
     width: 100%;
@@ -53,10 +53,10 @@
     
 }
 .second .left h2{
-    padding: 30px 30px 0px 30px;
+    padding: 40px 30px 0px 40px;
 }
 .second .left p{
-    padding: 0px 30px;
+    padding: 0px 40px;
 }
 .second .right{
     float: right;
@@ -71,7 +71,7 @@
 .second img{
     width: auto; height: auto;
     max-width: 300px;
-    max-height: 300px;   
+    max-height: 300px;
 }
 
 .third{
@@ -80,9 +80,9 @@
   background-color: rosybrown;
 }
 .third .descriptions{
-    padding: 20px;
+    padding: 40px;
     text-align: center;
-    padding-top: 130px;
+    padding-top: 70px;
 }
 .third .contents{
     display: flex;
@@ -136,33 +136,93 @@
 }
 .fourth{
     width: 100%;
-    height: 100vh;
+    height: 65vh;
     background-color: skyblue;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
-.fourth .script1{
-    padding: 30px;
-    width: 70%;
-    height: 60%;
-    border: solid;
-    
+.fourth .script{
+    padding: 100px 40px 0px 40px;
+    width: 50%;
+    height: 390px;
 }
 .fourth .images{
     padding: 30px;
-    width: 40%;
-    height: 60%;
-    border: solid; font-size: 80px;
+    width: 50%;
+    height: 390px;font-size: 80px;
     text-align: center;
 }
 .fourth .images svg{
     position: relative;
-    top:150px;
+    top:100px;
 }
-.fourth .script2{
-    position: relative;
-    top: 600px;
+.fifth{
     width: 100%;
-    border: solid;
+    height: 50vh;
+    background-color: darkseagreen;
+    z-index: 1;
+}
+.fifth .contents{
+    padding: 40px;
+    z-index: 3;
+    text-align: center;
+}
+.fifth .logo{
+    display: flex;
+    justify-content: space-around;
+}
+.fifth .logo img{
+    width: auto; height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    z-index: 2;
+    opacity: 0.5;
+}
+.fifth .logo img:hover{
+    z-index: 5;
+    opacity: 1;
+    background-color: none;
+}
+.contact{
+    width: 100%;
+    height: 40vh;
+    background-color: rosybrown;
+    text-align: center;
+}
+.contact .contents{
+    padding: 60px 40px 0px 40px;
+}
+.application{
+    width: 100%;
+    height: 100vh;
+}
+.application .textbox{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: floralwhite;
+}
+.application .textbox .form{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.application .textbox .form li{
+    list-style-type: none;
+}
+.application .right{
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.application .right img{
+    width: auto; height: auto;
+    max-width: 300px;
+    max-height: 300px;
 }
